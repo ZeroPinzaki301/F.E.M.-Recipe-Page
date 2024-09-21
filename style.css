@@ -1,0 +1,151 @@
+@font-face {
+  font-family: young-serif;
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: outfit;
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+h1 {
+  font-family: young-serif;
+  font-size: 2.79rem;
+  color: hsl(120, 100%, 7%);
+}
+
+h2 {
+  font-family: young-serif;
+  font-size: 1.8rem;
+  color: rgb(0, 70, 0);
+}
+
+h3 {
+  font-family: outfit;
+  font-size: 1.5rem;
+  color: rgb(102, 2, 60);
+}
+
+ul li, ol li {
+  font-family: outfit;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  font-size: 1.15rem;
+  margin-left: -1rem;
+  line-height: 2rem;
+  color: rgb(0, 70, 0);
+}
+
+p {
+  font-family: outfit;
+  font-size: 1.15rem;
+  line-height: 2rem;
+  color: rgb(0, 70, 0);
+}
+
+.hero p {
+  margin-top: -1rem;
+}
+
+
+main {
+  width: 50%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 1.5rem;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.preparation-time {
+  padding: .5rem 0 1.5rem 2rem ;
+  margin: 3rem 0rem 3rem 0rem;
+  border-radius: 1rem;
+  background-color: hsla(0, 0%, 37%, 0.048);
+}
+
+.bold-txt {
+  font-weight: bold;
+}
+
+.ingredients {
+  padding-bottom: 1rem;
+}
+
+.instructions {
+  padding-bottom: 1rem;
+}
+
+.col {
+  height: 3rem;
+  display: flex;
+
+}
+
+.col .row {
+  width: 50%;
+  font-family: outfit;
+  padding-left: 2.5rem;
+  padding-top: .75rem;
+  font-size: 1.15rem;
+  color: rgb(0, 70, 0);
+}
+
+.nutri-value {
+  font-weight: bold;
+}
+
+hr {
+  color: antiquewhite;
+  opacity: .3;
+}
+
+@media screen and (max-width: 500px) {
+
+  body {
+    background-color: white;
+  }
+  main {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-img img {
+    width: 103%;
+    border-radius: 0;
+    margin: -1.75% -1.75% 0 -1.75%;
+  }
+  
+  .padded {
+    padding: 0 2rem;
+  }
+
+  h1{
+    font-size: 2.5rem;
+  }
+
+  p, ul li, ol li, .col .row{
+    font-size: 1.23rem;
+  }
+
+  .preparation-time {
+    padding: .75rem 2.5rem;
+  }
+
+  .nutrition {
+    padding-bottom: 3rem;
+  }
+}
